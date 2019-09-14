@@ -1,0 +1,24 @@
+{
+  "name": "my-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "env TEST_ROOT=https://3wegfygs5f.execute-api.cn-northwest-1.amazonaws.com.cn/dev ./node_modules/.bin/mocha tests/test-cases --reporter spec --timeout 10000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "lodash": "^4.17.15",
+    "mocha": "^6.2.0",
+    "serverless": "^1.52.0",
+    "serverless-pseudo-parameters": "^2.4.0",
+    "superagent": "^5.1.0"
+  }
+}
