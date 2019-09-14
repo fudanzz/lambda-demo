@@ -22,12 +22,12 @@ provider:
   runtime: nodejs8.10
   region: cn-northwest-1
   endpointType: regional
-  profile: zhy
+##  profile: zhy
   iamRoleStatements:
     - Effect: Allow
       Action: dynamodb:scan
       Resource: arn:aws-cn:dynamodb:#{AWS::Region}:#{AWS::AccountId}:table/pets-store
-      
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
