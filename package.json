@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "env TEST_ROOT=https://3wegfygs5f.execute-api.cn-northwest-1.amazonaws.com.cn/dev ./node_modules/.bin/mocha tests/test-cases --reporter spec --timeout 10000"
+    "acceptance-test": "env TEST_ROOT=https://3wegfygs5f.execute-api.cn-northwest-1.amazonaws.com.cn/dev ./node_modules/.bin/mocha tests/test-cases --reporter spec --timeout 10000"
   },
   "author": "",
   "license": "ISC",
