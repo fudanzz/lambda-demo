@@ -6,9 +6,9 @@ instruction()
 {
   echo "usage: ./build.sh deploy <env>"
   echo ""
-  echo "env: eg. int, staging, prod, ..."
+  echo "env: eg. dev, staging, prod, ..."
   echo ""
-  echo "for example: ./deploy.sh int"
+  echo "for example: ./build.sh deploy dev"
 }
 
 if [ $# -eq 0 ]; then
