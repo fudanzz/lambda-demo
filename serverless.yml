@@ -15,31 +15,12 @@ provider:
       Resource: arn:aws-cn:dynamodb:#{AWS::Region}:#{AWS::AccountId}:table/pets-store
 
 functions:
-  hello:
-    handler: functions/hello-world.handler
-    events: 
-      - http:
-          path: hello
-          method: get
-          authorizer: custom-authorizer
-
   get-pets:
     handler: functions/get-pets.handler
     events: 
       - http:
           path: pets
           method: get
-
-  auth-user:
-    handler: functions/auth-user.handler
-    events: 
-      - http: 
-          path: /auth
-          method: post
-          private: true
-
-  custom-authorizer: 
-    handler: functions/custom-authorizer.handler
 
 resources:
   Resources:
