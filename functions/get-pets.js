@@ -3,7 +3,7 @@
 const AWS        = require('aws-sdk');
 const dynamodb   = new AWS.DynamoDB.DocumentClient();
 
-const defaultResults = process.env.defaultResults || 5;
+const defaultResults = process.env.defaultResults || 8;
 const tableName      = process.env.pets_table || 'pets-store';
 
 async function getRestaurants(count) {
