@@ -8,7 +8,7 @@ const tableName      = process.env.pets_table || 'pets-store';
 
 async function getRestaurants(count) {
 
-  console.log('got request');
+  console.log('receive request');
     
   let req = {
     TableName: tableName,
