@@ -9,3 +9,7 @@ phases:
       - chmod +x build.sh
       - ./build.sh deploy dev
       - ./build.sh acceptance-test
+
+cache: 
+  paths: 
+     - node_modules/**/*
